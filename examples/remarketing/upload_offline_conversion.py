@@ -27,6 +27,7 @@ from google.ads.google_ads.client import GoogleAdsClient
 from google.ads.google_ads.errors import GoogleAdsException
 
 
+# [START U5ZjhiOTg1]
 def main(
     client,
     customer_id,
@@ -75,6 +76,7 @@ def main(
                 for field_path_element in error.location.field_path_elements:
                     print(f"\t\tOn field: {field_path_element.field_name}")
         sys.exit(1)
+        # [END U5ZjhiOTg1]
 
 
 if __name__ == "__main__":

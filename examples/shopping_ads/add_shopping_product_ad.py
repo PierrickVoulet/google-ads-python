@@ -32,6 +32,7 @@ import uuid
 import google.ads.google_ads.client
 
 
+# [START kyYTg2MzM1]
 def main(
     client,
     customer_id,
@@ -63,6 +64,7 @@ def main(
         add_default_shopping_listing_group(
             client, customer_id, ad_group_resource_name
         )
+        # [END kyYTg2MzM1]
 
 
 def add_campaign_budget(client, customer_id):

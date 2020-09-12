@@ -22,6 +22,7 @@ from google.api_core import protobuf_helpers
 from google.ads.google_ads.client import GoogleAdsClient
 
 
+# [START I4YzdiNjFi]
 def main(client, customer_id, manager_customer_id):
     # This example assumes that the same credentials will work for both
     # customers, but that may not be the case. If you need to use different
@@ -96,6 +97,7 @@ def main(client, customer_id, manager_customer_id):
             resource_name
         )
     )
+    # [END I4YzdiNjFi]
 
 
 if __name__ == "__main__":

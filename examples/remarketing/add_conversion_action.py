@@ -22,6 +22,7 @@ import uuid
 import google.ads.google_ads.client
 
 
+# [START VhYjMxZGU5]
 def main(client, customer_id):
     conversion_action_service = client.get_service(
         "ConversionActionService", version="v5"
@@ -74,6 +75,7 @@ def main(client, customer_id):
         'Created conversion action "%s".'
         % conversion_action_response.results[0].resource_name
     )
+    # [END VhYjMxZGU5]
 
 
 if __name__ == "__main__":

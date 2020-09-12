@@ -29,6 +29,7 @@ LOCALE = "en"
 COUNTRY_CODE = "FR"
 
 
+# [START Y5MWNiOWIw]
 def main(client):
     gtc_service = client.get_service("GeoTargetConstantService", version="v5")
 
@@ -76,6 +77,7 @@ def main(client):
                 for field_path_element in error.location.field_path_elements:
                     print("\t\tOn field: %s" % field_path_element.field_name)
         sys.exit(1)
+        # [END Y5MWNiOWIw]
 
 
 if __name__ == "__main__":

@@ -24,6 +24,7 @@ import sys
 import google.ads.google_ads.client
 
 
+# [START EwMzg5MzUy]
 def main(client, customer_id, billing_setup_id):
     billing_setup_service = client.get_service(
         "BillingSetupService", version="v5"
@@ -58,6 +59,7 @@ def main(client, customer_id, billing_setup_id):
         "Removed billing setup %s."
         % billing_setup_response.results[0].resource_name
     )
+    # [END EwMzg5MzUy]
 
 
 if __name__ == "__main__":

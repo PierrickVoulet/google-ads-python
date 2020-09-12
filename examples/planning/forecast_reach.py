@@ -96,6 +96,7 @@ def show_plannable_locations(client):
         )
 
 
+# [START Y2NGM0Mjli]
 def show_plannable_products(client, location_id):
     """Lists plannable products for a given location.
 
@@ -111,8 +112,10 @@ def show_plannable_products(client, location_id):
     )
     print("Plannable Products for Location ID {}".format(location_id))
     print(response)
+    # [END Y2NGM0Mjli]
 
 
+# [START Q0YjY0OWFj]
 def _request_reach_curve(
     client, customer_id, product_mix, location_id, currency_code
 ):
@@ -202,8 +205,10 @@ def _request_reach_curve(
                 product_splits,
             ]
         )
+        # [END Q0YjY0OWFj]
 
 
+# [START cyNThjNDgz]
 def forecast_manual_mix(
     client, customer_id, location_id, currency_code, budget
 ):
@@ -236,8 +241,10 @@ def forecast_manual_mix(
     _request_reach_curve(
         client, customer_id, product_mix, location_id, currency_code
     )
+    # [END cyNThjNDgz]
 
 
+# [START E5NTRiNTEx]
 def forecast_suggested_mix(
     client, customer_id, location_id, currency_code, budget
 ):
@@ -282,6 +289,7 @@ def forecast_suggested_mix(
     _request_reach_curve(
         client, customer_id, product_mix, location_id, currency_code
     )
+    # [END E5NTRiNTEx]
 
 
 def main(client, customer_id):
